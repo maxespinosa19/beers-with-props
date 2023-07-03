@@ -15,7 +15,7 @@ export default function BeerList() {
             <button onClick={getBeers}>Get Beers</button>
             <section className="beer-list">
                 {!beers 
-                  ? <h2>Loading...</h2>
+                  ? <h2 className="loading-screen">Loading...</h2>
                   : beers.map((beer)=>(
                     <BeerCard 
                     key={beer.id} 
